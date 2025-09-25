@@ -300,10 +300,7 @@ export default function HomePage() {
       <section className="py-20 lg:py-32 bg-background">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <ScrollReveal containerClassName="mb-6" textClassName="text-3xl lg:text-4xl text-balance">
-              {"Does your current website answer these "}
-              {"5 critical patient questions?"}
-            </ScrollReveal>
+            <ScrollReveal containerClassName="mb-6" textClassName="text-3xl lg:text-4xl text-balance">Does your current website answer these 5 critical patient questions?</ScrollReveal>
             <p className="text-xl text-muted-foreground text-pretty max-w-3xl mx-auto">
               Every patient has these concerns before choosing a clinic. Your website should address them clearly to
               build trust and reduce repetitive calls.
@@ -492,11 +489,7 @@ export default function HomePage() {
       <section id="services" className="py-20 lg:py-32 bg-background">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <ScrollReveal containerClassName="mb-6" textClassName="text-3xl lg:text-4xl text-balance">
-              {"Complete "}
-              {"patient journey "}
-              {"for every procedure"}
-            </ScrollReveal>
+            <ScrollReveal containerClassName="mb-6" textClassName="text-3xl lg:text-4xl text-balance">Complete patient journey for every procedure</ScrollReveal>
             <p className="text-xl text-muted-foreground text-pretty max-w-3xl mx-auto">
               Every treatment page includes eligibility criteria, detailed process explanation, transparent pricing, and
               comprehensive aftercare instructions.
@@ -847,10 +840,7 @@ export default function HomePage() {
       <section id="pricing" className="py-20 lg:py-32 bg-background">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <ScrollReveal containerClassName="mb-6" textClassName="text-3xl lg:text-4xl text-balance">
-              {"Investment plans designed for "}
-              {"clinic growth"}
-            </ScrollReveal>
+            <ScrollReveal containerClassName="mb-6" textClassName="text-3xl lg:text-4xl text-balance">Investment plans designed for clinic growth</ScrollReveal>
             <p className="text-xl text-muted-foreground text-pretty max-w-3xl mx-auto">
               Choose the perfect package for your practice. Both plans include everything you need to start attracting
               qualified patients immediately.
@@ -1272,11 +1262,7 @@ export default function HomePage() {
               Limited Time Offer
             </Badge>
 
-            <ScrollReveal containerClassName="" textClassName="text-3xl lg:text-5xl text-balance">
-              {"Ready to "}
-              {"transform patient experience "}
-              {"and grow your practice?"}
-            </ScrollReveal>
+            <ScrollReveal containerClassName="" textClassName="text-3xl lg:text-5xl text-balance">Ready to transform patient experience and grow your practice?</ScrollReveal>
 
             <p className="text-xl text-muted-foreground text-pretty max-w-2xl mx-auto">
               Join successful clinics that have reduced repetitive calls by 85% while attracting more qualified patients.

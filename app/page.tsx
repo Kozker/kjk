@@ -4,7 +4,6 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import ScrollReveal from "@/components/ScrollReveal"
 import {
   CheckCircle,
   Phone,
@@ -207,18 +206,20 @@ export default function HomePage() {
               {/* CTAs */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
+                  asChild
                   size="lg"
                   className="bg-accent hover:bg-accent/90 text-accent-foreground animate-magnetic group"
                 >
-                  Get Your Clinic Website
-                  <Calendar className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  <a href="#contact">Get Your Clinic Website
+                  <Calendar className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" /></a>
                 </Button>
                 <Button
+                  asChild
                   variant="outline"
                   size="lg"
                   className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground bg-transparent"
                 >
-                  View Clinic Examples
+                  <a href="/examples">View Clinic Examples</a>
                 </Button>
               </div>
 
@@ -300,7 +301,7 @@ export default function HomePage() {
       <section className="py-20 lg:py-32 bg-background">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <ScrollReveal containerClassName="mb-6" textClassName="text-3xl lg:text-4xl text-balance">Does your current website answer these 5 critical patient questions?</ScrollReveal>
+            <h2 className="text-3xl lg:text-4xl font-bold text-balance mb-6">Does your current website answer these 5 critical patient questions?</h2>
             <p className="text-xl text-muted-foreground text-pretty max-w-3xl mx-auto">
               Every patient has these concerns before choosing a clinic. Your website should address them clearly to
               build trust and reduce repetitive calls.
@@ -477,9 +478,9 @@ export default function HomePage() {
             <p className="text-lg text-muted-foreground mb-6">
               If your website doesn't clearly answer these questions, you're losing potential patients every day.
             </p>
-            <Button size="lg" className="bg-primary hover:bg-primary/90 animate-magnetic">
-              Get a Website That Converts
-              <TrendingUp className="ml-2 h-4 w-4" />
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 animate-magnetic">
+              <a href="#contact">Get a Website That Converts
+              <TrendingUp className="ml-2 h-4 w-4" /></a>
             </Button>
           </div>
         </div>
@@ -489,7 +490,7 @@ export default function HomePage() {
       <section id="services" className="py-20 lg:py-32 bg-background">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <ScrollReveal containerClassName="mb-6" textClassName="text-3xl lg:text-4xl text-balance">Complete patient journey for every procedure</ScrollReveal>
+            <h2 className="text-3xl lg:text-4xl font-bold text-balance mb-6">Complete patient journey for every procedure</h2>
             <p className="text-xl text-muted-foreground text-pretty max-w-3xl mx-auto">
               Every treatment page includes eligibility criteria, detailed process explanation, transparent pricing, and
               comprehensive aftercare instructions.
@@ -544,11 +545,12 @@ export default function HomePage() {
                     </div>
 
                     <Button
+                      asChild
                       variant="outline"
                       size="sm"
                       className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors bg-transparent"
                     >
-                      Learn More & Book
+                      <a href="#contact">Learn More & Book</a>
                     </Button>
                   </div>
                 </Card>
@@ -823,13 +825,13 @@ export default function HomePage() {
               <span className="font-medium">Ready to transform your practice?</span>
             </div>
             <div className="flex items-center space-x-4">
-              <Button variant="ghost" size="sm" className="text-secondary-foreground hover:bg-secondary-foreground/10">
-                <Phone className="h-4 w-4 mr-2" />
-                Call Now
+              <Button asChild variant="ghost" size="sm" className="text-secondary-foreground hover:bg-secondary-foreground/10">
+                <a href="tel:+916282054521"><Phone className="h-4 w-4 mr-2" />
+                Call Now</a>
               </Button>
-              <Button variant="ghost" size="sm" className="text-secondary-foreground hover:bg-secondary-foreground/10">
-                <MessageCircle className="h-4 w-4 mr-2" />
-                WhatsApp
+              <Button asChild variant="ghost" size="sm" className="text-secondary-foreground hover:bg-secondary-foreground/10">
+                <a href="https://wa.me/916282054521" target="_blank" rel="noopener noreferrer"><MessageCircle className="h-4 w-4 mr-2" />
+                WhatsApp</a>
               </Button>
             </div>
           </div>
@@ -840,7 +842,7 @@ export default function HomePage() {
       <section id="pricing" className="py-20 lg:py-32 bg-background">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <ScrollReveal containerClassName="mb-6" textClassName="text-3xl lg:text-4xl text-balance">Investment plans designed for clinic growth</ScrollReveal>
+            <h2 className="text-3xl lg:text-4xl font-bold text-balance mb-6">Investment plans designed for clinic growth</h2>
             <p className="text-xl text-muted-foreground text-pretty max-w-3xl mx-auto">
               Choose the perfect package for your practice. Both plans include everything you need to start attracting
               qualified patients immediately.
@@ -902,9 +904,9 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                <Button size="lg" className="w-full bg-primary hover:bg-primary/90 animate-magnetic group">
-                  Start Premium Website
-                  <Sparkles className="ml-2 h-4 w-4 group-hover:rotate-12 transition-transform" />
+                <Button asChild size="lg" className="w-full bg-primary hover:bg-primary/90 animate-magnetic group">
+                  <a href="#contact">Start Premium Website
+                  <Sparkles className="ml-2 h-4 w-4 group-hover:rotate-12 transition-transform" /></a>
                 </Button>
 
                 <div className="text-center">
@@ -965,12 +967,13 @@ export default function HomePage() {
                 </div>
 
                 <Button
+                  asChild
                   size="lg"
                   variant="outline"
                   className="w-full border-accent text-accent hover:bg-accent hover:text-accent-foreground animate-magnetic group bg-transparent"
                 >
-                  Start Essential Website
-                  <Calendar className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  <a href="#contact">Start Essential Website
+                  <Calendar className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" /></a>
                 </Button>
 
                 <div className="text-center">
@@ -1240,13 +1243,13 @@ export default function HomePage() {
               <span className="font-medium">Ready to transform your practice?</span>
             </div>
             <div className="flex items-center space-x-4">
-              <Button variant="ghost" size="sm" className="text-secondary-foreground hover:bg-secondary-foreground/10">
-                <Phone className="h-4 w-4 mr-2" />
-                Call Now
+              <Button asChild variant="ghost" size="sm" className="text-secondary-foreground hover:bg-secondary-foreground/10">
+                <a href="tel:+916282054521"><Phone className="h-4 w-4 mr-2" />
+                Call Now</a>
               </Button>
-              <Button variant="ghost" size="sm" className="text-secondary-foreground hover:bg-secondary-foreground/10">
-                <MessageCircle className="h-4 w-4 mr-2" />
-                WhatsApp
+              <Button asChild variant="ghost" size="sm" className="text-secondary-foreground hover:bg-secondary-foreground/10">
+                <a href="https://wa.me/916282054521" target="_blank" rel="noopener noreferrer"><MessageCircle className="h-4 w-4 mr-2" />
+                WhatsApp</a>
               </Button>
             </div>
           </div>
@@ -1262,7 +1265,7 @@ export default function HomePage() {
               Limited Time Offer
             </Badge>
 
-            <ScrollReveal containerClassName="" textClassName="text-3xl lg:text-5xl text-balance">Ready to transform patient experience and grow your practice?</ScrollReveal>
+            <h2 className="text-3xl lg:text-5xl font-bold text-balance leading-tight">Ready to transform patient experience and grow your practice?</h2>
 
             <p className="text-xl text-muted-foreground text-pretty max-w-2xl mx-auto">
               Join successful clinics that have reduced repetitive calls by 85% while attracting more qualified patients.
@@ -1282,19 +1285,21 @@ export default function HomePage() {
             {/* Primary CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button
+                asChild
                 size="lg"
                 className="bg-accent hover:bg-accent/90 text-accent-foreground animate-magnetic group text-lg px-8 py-4"
               >
-                Start Your Website Project
-                <TrendingUp className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                <a href="#contact">Start Your Website Project
+                <TrendingUp className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" /></a>
               </Button>
               <Button
+                asChild
                 variant="outline"
                 size="lg"
                 className="border-primary text-primary hover:bg-primary hover:text-primary-foreground text-lg px-8 py-4 bg-transparent"
               >
-                Schedule Discovery Call
-                <Calendar className="ml-2 h-5 w-5" />
+                <a href="#contact">Schedule Discovery Call
+                <Calendar className="ml-2 h-5 w-5" /></a>
               </Button>
             </div>
 
@@ -1311,8 +1316,8 @@ export default function HomePage() {
                     <div className="text-center">
                       <h4 className="font-semibold mb-1">WhatsApp</h4>
                       <p className="text-sm text-muted-foreground mb-3">Instant response</p>
-                      <Button variant="ghost" size="sm" className="text-primary hover:bg-primary/10">
-                        +91-62820-54521
+                      <Button asChild variant="ghost" size="sm" className="text-primary hover:bg-primary/10">
+                        <a href="https://wa.me/916282054521" target="_blank" rel="noopener noreferrer">+91-62820-54521</a>
                       </Button>
                     </div>
                   </div>
@@ -1326,8 +1331,8 @@ export default function HomePage() {
                     <div className="text-center">
                       <h4 className="font-semibold mb-1">Call</h4>
                       <p className="text-sm text-muted-foreground mb-3">Direct consultation</p>
-                      <Button variant="ghost" size="sm" className="text-accent hover:bg-accent/10">
-                        +91-62820-54521
+                      <Button asChild variant="ghost" size="sm" className="text-accent hover:bg-accent/10">
+                        <a href="tel:+916282054521">+91-62820-54521</a>
                       </Button>
                     </div>
                   </div>
@@ -1341,8 +1346,8 @@ export default function HomePage() {
                     <div className="text-center">
                       <h4 className="font-semibold mb-1">Email</h4>
                       <p className="text-sm text-muted-foreground mb-3">Detailed inquiry</p>
-                      <Button variant="ghost" size="sm" className="text-secondary hover:bg-secondary/10">
-                        info@kozker.com
+                      <Button asChild variant="ghost" size="sm" className="text-secondary hover:bg-secondary/10">
+                        <a href="mailto:info@kozker.com">info@kozker.com</a>
                       </Button>
                     </div>
                   </div>
